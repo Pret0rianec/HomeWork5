@@ -1,13 +1,79 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
-
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+    // Task1
+    System.out.println("    Task_1:");
+    {
+        int clientOS = 1;
+        if (clientOS != 1) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        }
+    }
+    // Task2
+    System.out.println("    Task_2:");
+    int clientOS = 0;
+    int clientDeviceYear = 2014;
+    if (clientOS != 1 && clientDeviceYear >= 2015) {
+        System.out.println("Установите версию приложения для iOS по ссылке");
+    } else if (clientOS != 1 && clientDeviceYear < 2015) {
+        System.out.println("Установите ОБЛЕГЧЁННУЮ версию приложения для iOS по ссылке");
+    } else if (clientOS == 1 && clientDeviceYear >= 2015) {
+        System.out.println("Установите версию приложения для Android по ссылке");
+    } else {
+        System.out.println("Установите ОБЛЕГЧЁННУЮ версию приложения для Android по ссылке");
+    }
+    // Task3
+    System.out.println("    Task_3");
+    int year = 2021;
+    boolean leapYear = ((year > 1584 && year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
+    if (leapYear) {
+        System.out.println(year + " год является високосным");
+    } else {
+        System.out.println(year + " год не является високосным");
+    }
+    // Task4
+    System.out.println("    Task_4");
+    int deliveryDistance = 95;
+    int delivDay;
+    if (deliveryDistance <= 20) {
+        delivDay = 1;
+        System.out.println("На доставку потребуется дней: " + delivDay);
+    } else if (deliveryDistance <= 60) {
+        delivDay = 2;
+        System.out.println("На доставку потребуется дней: " + delivDay);
+    } else if (deliveryDistance <= 100) {
+        delivDay = 3;
+        System.out.println("На доставку потребуется дней: " + delivDay);
+    } else {
+        System.out.println("Свыше 100 км доставки нет.");
+    }
+    // Task5
+    System.out.println("    Task_5");
+    int monthNumber = 12;
+    switch (monthNumber) {
+        case 12:
+        case 1:
+        case 2:
+            System.out.println("Этот месяц принадлежит к сезону: зима.");
+            break;
+        case 3:
+        case 4:
+        case 5:
+            System.out.println("Этот месяц принадлежит к сезону: весна.");
+            break;
+        case 6:
+        case 7:
+        case 8:
+            System.out.println("Этот месяц принадлежит к сезону: лето.");
+            break;
+        case 9:
+        case 10:
+        case 11:
+            System.out.println("Этот месяц принадлежит к сезону: осень.");
+            break;
+        default:
+            System.out.println("В году только 12 месяцев!");
     }
 }
