@@ -11,13 +11,13 @@ void main() {
     }
     // Task2
     System.out.println("    Task_2:");
-    int newClientOS = 0;
+    int mobileOS = 0;
     int clientDeviceYear = 2014;
-    if (newClientOS != 1 && clientDeviceYear >= 2015) {
+    if (mobileOS != 1 && clientDeviceYear >= 2015) {
         System.out.println("Установите версию приложения для iOS по ссылке");
-    } else if (newClientOS != 1 && clientDeviceYear < 2015) {
+    } else if (mobileOS != 1 && clientDeviceYear < 2015) {
         System.out.println("Установите ОБЛЕГЧЁННУЮ версию приложения для iOS по ссылке");
-    } else if (newClientOS == 1 && clientDeviceYear >= 2015) {
+    } else if (mobileOS == 1 && clientDeviceYear >= 2015) {
         System.out.println("Установите версию приложения для Android по ссылке");
     } else {
         System.out.println("Установите ОБЛЕГЧЁННУЮ версию приложения для Android по ссылке");
